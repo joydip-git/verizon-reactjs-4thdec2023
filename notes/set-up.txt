@@ -1,0 +1,13 @@
+repository:
+https://github.com/joydip-git/verizon-reactjs-4thdec2023
+
+Learning curve:
+JavaScript
+New features of JS
+TypeScript
+Node JS (basics)
+React JS or Angular or Vue JS
+
+set up:
+install nodejs (nodejs.org)
+install Visual Studio code

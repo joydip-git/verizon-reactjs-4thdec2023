@@ -1,0 +1,55 @@
+JS and TS:
+
+data types:
+string, boolean, number and object (and function)
+undefined, null, infinity, NaN etc.
+
+TS => JS
+transpilers:
+s/w: typescript compiler (tsc)
+
+1994
+
+ECMA
+ECMAScript
+
+ES5
+ES6+
+
+package.json: configuration about the application
+create:
+a. manually
+b. using NPM tool
+	command:
+	>npm init
+	or 
+	>npm init --yes
+
+installtion of package using NPM:
+global: 
+in the system
+path: C:\Users\<user-name>\AppData\Roaming\npm
+command: >npm i <package-name> --location=global
+
+local : local to the application
+path: app directory
+command: >npm i <package-name>
+
+complete dependency:
+>npm i <package-name> --save
+or
+>npm i <package-name>
+
+development dependency:
+>npm i <package-name> --save-dev
+or
+>npm i typescript -D
+
+
+
+installing typescript transpiler:
+>npm i typescript --save-dev
+or
+>npm i typescript -D
+
+
