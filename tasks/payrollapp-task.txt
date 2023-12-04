@@ -1,0 +1,15 @@
+create app: payroll-app
+
+developer: 
+value properties: name, id, basic payment, da payment, hra payment, incentive payment, total salary
+functional property: calculateSalary
+							args: NA
+							RT: void
+hr: 
+value properties: name, id, basic payment, da payment, hra payment, gratuity payment, total salary
+functional property: calculateSalary
+							args: NA
+							RT: void
+
+create an array and store some objects (2 eahc) of developer and hr first
+iterate through the array and calculate salary of every object and print
