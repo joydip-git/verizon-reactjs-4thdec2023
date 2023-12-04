@@ -63,6 +63,14 @@ b. execution stage
 
 in JS, whenever a function is invoked, an FEC (function execution context) object is created and placed in stack (FEC stack)
 
+closure:
+maintaing lexical scope state for any function un JS
+
+ES6+ new features:
+let and const keyword
+class, constructor, extends and super keywords
+
+
 
 
 

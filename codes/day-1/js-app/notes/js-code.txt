@@ -1,0 +1,59 @@
+//1. object-literal syntax
+// const objRef = {
+//     //value properties
+//     name: 'anil',
+//     id: 1,
+//     salary: 1000,
+//     //functional property
+//     print: function () {
+//         return this.id + ' ' + this.name + ' ' + this.salary
+//     }
+// }
+'use strict'
+//2. constructor function
+// function person(name, id, salary) {
+//     this.name = name
+//     this.id = id
+//     this.salary = salary
+//     this.print = function () {
+//         return this.id + ' ' + this.name + ' ' + this.salary
+//     }
+// }
+class Person {
+    constructor(name, id, salary) {
+        this.name = name
+        this.id = id
+        this.salary = salary
+    }
+    print() {
+        return this.id + ' ' + this.name + ' ' + this.salary
+    }
+}
+class Trainer extends Person {
+    constructor(name, id, salary, subject) {
+        super(name, id, salary)
+        this.subject = subject
+    }
+    print() {
+        return super.print() + ' ' + this.subject
+    }
+}
+const anilRef = new Trainer('anil', 1, 1000, 'React JS')
+const sunilRef = new Trainer('sunil', 2, 2000, 'Angular')
+//access properties of object
+console.log(anilRef.name)
+console.log(sunilRef['salary'])
+
+console.log(objRef.print())
+//console.log(objRef['print']())
+
+anilRef.location = 'hyderabad'
+sunilRef.sayHi = function () {
+    console.log('Hi ' + this.name)
+}
+
+//console.log(objRef)
+for (let propName in anilRef) {
+    let propValue = anilRef[propName]
+    console.log(propName + ':' + propValue)
+}
