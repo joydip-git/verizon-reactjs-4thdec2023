@@ -52,4 +52,20 @@ installing typescript transpiler:
 or
 >npm i typescript -D
 
+creating tsconfig.json file (with configuration for typescript transpiler):
+>tsc --init
+
+
+js execution cycle:
+a. preparation stage: 
+	all variable declarations and function declarations (NOT expressions) are hoisted 
+b. execution stage
+
+in JS, whenever a function is invoked, an FEC (function execution context) object is created and placed in stack (FEC stack)
+
+
+
+
+
+
 

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "target": "ES5",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  }
+}
