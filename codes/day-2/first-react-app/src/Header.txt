@@ -1,0 +1,15 @@
+import { createElement } from "react";
+
+export function Header() {
+    //<div id='welcomeHeader' class=''>Welcome to React JS</div>
+    const message = 'Welcome to React JS'
+    // const design = createElement('div', { id: 'welcomeHeader' }, createElement('p',{},message))
+    const design = (
+        <div id="welcomeHeader">
+            <p>
+                {message}
+            </p>
+        </div>
+    )
+    return design
+}

@@ -1,0 +1,43 @@
+import { createElement } from "react";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+
+export function App() {
+    /*
+    <div id='mainDiv'>
+        <div id='welcomeHeader'>
+            Welcome to React JS
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <h3>
+            verizon,2023
+        </h3>
+    </div>
+     */
+    //const headerReactElement = Header()
+    //const footerReactElement = Footer()
+
+    // const divElement = createElement(
+    //     'div',
+    //     { id: 'mainHeader' },
+    //     [
+    //         headerReactElement,
+    //         createElement('br'),
+    //         createElement('br'),
+    //         createElement('br'),
+    //         footerReactElement
+    //     ]
+    // )
+    const divElement = (
+        <div id='mainDiv'>
+            {Header()}
+            <br />
+            <br />
+            <br />
+            <Footer />
+        </div>
+    )
+    return divElement
+}

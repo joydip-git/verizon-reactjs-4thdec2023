@@ -1,0 +1,15 @@
+import { createElement } from "react"
+
+export function Footer() {
+    const footerContent = `,Verizon, 2023`
+    // const footerElement = createElement(
+    //     'h3',
+    //     {},
+
+    //     [
+    //         footerContent
+    //     ]
+    // )
+    const footerElement = <h3>{footerContent}</h3>
+    return footerElement
+}
