@@ -29,3 +29,12 @@ when any file is loaded in node runtime, the module object for that file is crea
 
 Note: broswer does NOT have any module loader
 solution: supply module loader s/w to browser
+
+
+New Features in JS:
+spread and rest operator
+object destructuring
+templated string
+arrow function
+Promise object
+
