@@ -1,0 +1,31 @@
+modules in JavaScript:
+a. module
+b. module format
+	1. common js format (default module format for node js)
+		export: module.exports = { propName: memberName }
+		import: const obj = require('module-name')
+
+	2. ES6 module format:
+		 export: export member
+		 import: import { member } from 'module'
+
+	3. AMD (asynchronous module definition)
+		define(
+			'',[], function(){
+				
+			}
+		)
+
+	4. UMD (Universal module definition)
+		require()
+
+c. module loader:
+	the one, who understands the import/export format and resolves dependencies amongst files and then load the files accordingly
+	ex: require js, system js, curl js, steal js etc.
+	common js module loader is by default part of node js runtime
+
+a module object represents information about a file in node runtime
+when any file is loaded in node runtime, the module object for that file is created by node runtime
+
+Note: broswer does NOT have any module loader
+solution: supply module loader s/w to browser

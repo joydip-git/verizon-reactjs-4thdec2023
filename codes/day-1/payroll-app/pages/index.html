@@ -5,14 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payroll App</title>
+    <link rel="stylesheet" href="../styles/theme.css">
 </head>
 
 <body>
-    <h2>Payroll</h2>
-    <script src="../dist/models/employee.js"></script>
+
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Payroll Application</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container container-fluid">
+        <div>
+            <label for="radioDev">Developer</label>
+            &nbsp;&nbsp;
+            <input type="radio" name="empgroup" id="radioDev">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="radioHr">Hr</label>
+            <input type="radio" name="empgroup" id="radioHr">
+        </div>
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Enter Values:&nbsp;</legend>
+                <div class="form-group">
+                    <label for="txtId" class="form-label mt-4">Id:&nbsp;</label>
+                    <input type="text" id="txtId" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="txtName" class="form-label mt-4">Name:&nbsp;</label>
+                    <input type="text" id="txtName" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="txtBasic" class="form-label mt-4">Basic Pay:&nbsp;</label>
+                    <input type="text" id="txtBasic" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="txtDa" class="form-label mt-4">Da Pay:&nbsp;</label>
+                    <input type="text" id="txtDa" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="txtHra" class="form-label mt-4">Hra Pay:&nbsp;</label>
+                    <input type="text" id="txtHra" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="txtExtra" id="lblExtra" class="form-label mt-4">Pay:&nbsp;</label>
+                    <input type="text" id="txtExtra" class="form-control">
+                </div>
+                <br>
+                <div class="form-group" style="text-align: center;">
+                    <input type="button" value="Add" id="btnAdd" class="btn btn-primary">
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <br>
+        <table id="empTable" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Basic</th>
+                    <th>Da</th>
+                    <th>Hra</th>
+                    <th>Extra</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tblBody" class="table-primary">
+                <!-- <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <!-- <script src="../dist/models/employee.js"></script>
     <script src="../dist/models/developer.js"></script>
     <script src="../dist/models/hr.js"></script>
-    <script src="../dist/index.js"></script>
+    <script src="../dist/index.js"></script> -->
+
+    <script src="../node_modules/requirejs/require.js" data-main="../dist/index.js"></script>
 </body>
 
 </html>

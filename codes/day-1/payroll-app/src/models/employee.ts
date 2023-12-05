@@ -1,4 +1,4 @@
-class Employee {
+export class Employee {
     totalSalary: number;
 
     constructor(public id: number, public name: string, public basicPayment: number, public daPayment: number, public hraPayment: number) {

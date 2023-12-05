@@ -5,10 +5,6 @@
     "target": "ES5",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "module": "AMD",
-    "lib": [
-      "DOM",
-      "ES2022"
-    ]
+    "module": "AMD"
   }
 }
