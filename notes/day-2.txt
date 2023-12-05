@@ -38,3 +38,10 @@ templated string
 arrow function
 Promise object
 
+
+React JS:
+a. client-side JavaScript Library for UI development
+b. single page application
+c. uses Virtual DOM (makes it much faster)
+d. helps you create component based application
+e. huge community support

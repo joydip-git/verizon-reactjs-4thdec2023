@@ -1,0 +1,10 @@
+// type myType = boolean | string | number[]
+// function test(data: myType): myType {
+//     return [1, 2, 3]
+// }
+// interface WelcomePropType {
+//     message?: string;
+//     messageHandler: () => void
+// }
+
+type fnType = () => void
