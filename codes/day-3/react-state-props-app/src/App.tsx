@@ -1,11 +1,12 @@
 import { Component, ReactNode } from 'react';
 import './App.css';
 import { Welcome } from './Welcome';
+import PersonInfo from './PersonInfo';
 
 type AppPropType = {
   data?: number
 }
-interface Person {
+export interface Person {
   name: string;
   id: number;
   salary: number;
@@ -84,15 +85,7 @@ class App extends Component<AppPropType, AppStateType> {
             {
               this.state.people.map(
                 (p) => {
-                  return <li onClick={
-                    () => {
-                      this.updatePeople(p.id, 'salary', 4000)
-                    }
-                  }>
-                    <span>
-                      {p.id}:{p.name}:{p.salary}
-                    </span>
-                  </li>
+                  return <PersonInfo key={p.id} person={p} updateHandler={this.updatePeople} />
                 }
               )
             }
