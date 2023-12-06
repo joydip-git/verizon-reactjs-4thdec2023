@@ -4,6 +4,10 @@
         "rootDir": "src",
         "outDir": "dist",
         "forceConsistentCasingInFileNames": true,
-        "strict": true
+        "strict": true,
+        "lib": [
+            "ES2022",
+            "DOM"
+        ]
     }
 }

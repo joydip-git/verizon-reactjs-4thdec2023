@@ -53,6 +53,9 @@ src (folder)
 	models (folder)
 		product.ts (an interface represnting product model)
 
+	config (folder)
+		axiosconfig.ts (file)
+
 	services (folder)
 		productservice.ts
 			getProducts()
@@ -66,6 +69,21 @@ src (folder)
 				ProductList.tsx, ProductList.test.tsx, ProductList.css (files)
 			product-row (folder)
 				ProductRow.tsx, ProductRow.test.tsx, ProductRow.css (files)
+
+
+axios:
+	get() => Promise<AxiosResponse<ApiResponse<Product[]>>>
+	put(data)
+	post(data)
+	delete()
+
+ES6
+Promise
+	=> task
+
+
+
+
 
 
 
