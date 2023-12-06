@@ -59,8 +59,8 @@ src (folder)
 		products (folder)
 			product-list (folder)
 				ProductList.tsx, ProductList.test.tsx, ProductList.css (files)
-			product-detail (folder)
-				ProductDetail.tsx, ProductDetail.test.tsx, ProductDetail.css (files)
+			product-row (folder)
+				ProductRow.tsx, ProductRow.test.tsx, ProductRow.css (files)
 
 
 
