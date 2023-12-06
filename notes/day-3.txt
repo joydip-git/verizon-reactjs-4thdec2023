@@ -42,5 +42,29 @@
 		PostContent => content
 		PostComments => comments
 			PostComment
+
+src (folder)
+	index.tsx
+	index.css
+
+	repository (folder)
+		products.ts (file - containing an array of sample products)
+
+	models (folder)
+		product.ts (an interface represnting product model)
+
+	components (folder)
+		app (folder)
+			App.tsx, App.test.tsx, App.css (files)
+		products (folder)
+			product-list (folder)
+				ProductList.tsx, ProductList.test.tsx, ProductList.css (files)
+			product-detail (folder)
+				ProductDetail.tsx, ProductDetail.test.tsx, ProductDetail.css (files)
+
+
+
+
+
 	
 	
