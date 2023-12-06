@@ -1,0 +1,46 @@
+1. how to create components:
+	a. functional component
+	b. class component
+
+2. conditional rendering
+		if loop: &&
+	ex: data && data => if(data){ data }
+		if else: ?:
+	ex: data?data:'NA' if(data){data}else {'NA'}
+
+3. props (properties)
+	readonly
+	w.r.t functional component, react js creates an object and puts the properties (that you mentioned as attributes in JSX syntax) along with the values and is passed to the functional component as an argument
+	<Welcome data={10} /> => Welcome({data:10})
+	function Welcome(props){	
+		props.data
+	}
+
+	w.r.t class component, react js creates an object and puts the properties (that you mentioned as attributes in JSX syntax) along with the values and is passed to the class component constructor as an argument and this object is assigned to "props" property, when the object is created and next time onwards assigns directly to the "props" property
+
+	property object is immutable
+
+4. state: readonly
+	can be mutated (not directly), immutably
+	state is a property from Component class
+	state must be assigned an object with properties to store data, which all must be assigned with some value initially
+	state must be updated by using setState() method, to which you must pass a new state object, with the properties and new values that you would like to update
+	setState() method updates state by copying the old state
+	this job is done asynchronously
+	once the state update is complete, the state property is reassigned with new state object
+	after that render() method is recalled by React JS runtime, so that new react element of that component with updated data can be created (thus creating new VDOM version)
+	React JS then compares the Old VDOM with new VDOM, and accordingly update the existing ADOM
+
+
+
+	Post => state => content:any, comments:string[]
+		updateComments=(newComment:string)=> {
+			let copy = {...this.state.comments}
+			copy.push(newComment)
+			this.setState({comments:copy})
+		}
+		PostContent => content
+		PostComments => comments
+			PostComment
+	
+	
