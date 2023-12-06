@@ -53,6 +53,11 @@ src (folder)
 	models (folder)
 		product.ts (an interface represnting product model)
 
+	services (folder)
+		productservice.ts
+			getProducts()
+			getProduct(id:number)
+
 	components (folder)
 		app (folder)
 			App.tsx, App.test.tsx, App.css (files)
@@ -61,6 +66,8 @@ src (folder)
 				ProductList.tsx, ProductList.test.tsx, ProductList.css (files)
 			product-row (folder)
 				ProductRow.tsx, ProductRow.test.tsx, ProductRow.css (files)
+
+
 
 
 
