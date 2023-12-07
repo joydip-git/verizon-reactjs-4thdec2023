@@ -1,9 +1,12 @@
 import AppRoutes from '../../routes/AppRoutes';
+import DashBoard from '../common/dashboard/DashBoard';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
+      <br />
+      <DashBoard />
       <br />
       <AppRoutes />
     </div>
