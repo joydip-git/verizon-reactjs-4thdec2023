@@ -1,5 +1,10 @@
 import './AddProduct.css'
 const AddProduct = () => {
+
+    const submitData = () => {
+        //create a product object based on input data
+        //send HTTP request using service method addProduct() by passing the product object to the addProduct() method
+    }
     return (
         <form>
             <fieldset>
@@ -45,7 +50,6 @@ const AddProduct = () => {
                 <div className="form-group">
                     <label htmlFor="txtRating" className="form-label mt-4">Rating:&nbsp;</label>
                     <input type="text" id="txtRating" className="form-control" />
-
                 </div>
 
                 {/* image url */}
@@ -55,7 +59,7 @@ const AddProduct = () => {
                 </div>
                 <br />
                 <div className='center-style'>
-                    <button type="button" className="btn btn-primary">Add</button>
+                    <button type="button" className="btn btn-primary" onClick={submitData}>Add</button>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <button type="button" className="btn btn-danger">Cancel</button>
                 </div>
