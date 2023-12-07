@@ -1,0 +1,21 @@
+Lifecycle of class component:
+	a. mounting:
+		i. constructor gets called, object created and initialized
+		ii. render() method gets called (returns RE)
+		iii. componentDidMount event gets fired
+				- handle that event by writing a method in the class component: componentDidMount() => inherited from Component class
+
+	b. update (class component's internal state has been updated or from parent component it has received fresh property object or parent component got updated)
+		i. an event gets fired: shouldComponentUpdate
+		- handle that event by writing a method in the class component: shouldComponentUpdate() => inherited from Component class
+		ii. render() method gets called (creating next version of VDOM or RE)
+		iii. an event gets fired: componentDidUpdate
+		- handle that event by writing a method in the class component: componentDidUpdate() => inherited from Component class
+
+	c. error:
+		an event gets fired: componentDidCatch
+		- handle that event by writing a method in the class component: componentDidCatch() => inherited from Component class
+
+	d. destruction
+		an event gets fired: componentWillUnmount
+		- handle that event by writing a method in the class component: componentWillUnmount() => inherited from Component class
