@@ -19,3 +19,27 @@ Lifecycle of class component:
 	d. destruction
 		an event gets fired: componentWillUnmount
 		- handle that event by writing a method in the class component: componentWillUnmount() => inherited from Component class
+
+pms-app:
+
+DashBoard
+
+http://localhost:3000/home 					=> Home
+http://localhost:3000 		 					=> Home
+
+http://localhost:3000/products 				=> ProductList
+http://localhost:3000/products/view/id 	=> ProductDetail
+http://localhost:3000/products/edit/id 	=> EditProduct
+http://localhost:3000/products/add 		=> AddProduct
+
+PageNotFound
+
+React Router =>
+	Router engine: BrowserRouter
+	Route => path and component
+
+
+
+
+
+

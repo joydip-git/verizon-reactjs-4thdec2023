@@ -1,11 +1,11 @@
-import ProductList from '../products/product-list/ProductList';
+import AppRoutes from '../../routes/AppRoutes';
 import './App.css';
 
 function App() {
   return (
     <div>
       <br />
-      <ProductList />
+      <AppRoutes />
     </div>
   );
 }
