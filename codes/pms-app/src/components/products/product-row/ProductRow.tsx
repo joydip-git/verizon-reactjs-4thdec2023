@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Product } from '../../../models/product'
 import './ProductRow.css'
 
@@ -9,12 +10,14 @@ const ProductRow = (props: Readonly<ProductRowPropType>) => {
     return (
         <tr>
             <td>
-                <img
-                    className='img-style'
-                    src={productData.imageUrl}
-                    alt="NA"
-                    title={productData.productName}
-                />
+                <Link to={`/products/view/${productData.productId}`}>
+                    <img
+                        className='img-style'
+                        src={productData.imageUrl}
+                        alt="NA"
+                        title={productData.productName}
+                    />
+                </Link>
             </td>
             <td>
                 {productData.productName}
