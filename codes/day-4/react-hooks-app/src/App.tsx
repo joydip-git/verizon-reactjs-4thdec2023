@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Sample from './Sample';
 
 function App() {
+  const [show, setShow] = useState<boolean>(true)
+  const [name, setName] = useState<string>('')
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <label htmlFor="txtName">Name: &nbsp;</label>
+        <input
+          type="text"
+          id='txtName'
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+      <br />
+      <button type="button" onClick={
+        () => setShow(cs => !cs)
+      }>
+        {
+          show ? 'Hide' : 'Show'
+        }
+      </button>
+      <br />
+      {show && <Sample />}
     </div>
   );
 }
