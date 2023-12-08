@@ -1,10 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import Home from '../components/common/home/Home';
-import ProductList from '../components/products/product-list/ProductList';
-import AddProduct from "../components/products/add-product/AddProduct";
-import ProductDetail from "../components/products/product-detail/ProductDetail";
-import EditProduct from "../components/products/edit-product/EditProduct";
-import PageNotFound from "../components/common/page-not-found/PageNotFound";
+import { lazy } from "react";
+
+const Home = lazy(() => import('../components/common/home/Home'))
+const ProductList = lazy(() => import('../components/products/product-list/ProductList'));
+const AddProduct = lazy(() => import("../components/products/add-product/AddProduct"));
+
+const ProductDetail = lazy(() => import("../components/products/product-detail/ProductDetail"));
+const EditProduct = lazy(() => import("../components/products/edit-product/EditProduct"));
+const PageNotFound = lazy(() => import("../components/common/page-not-found/PageNotFound"));
+
 
 const AppRoutes = () => {
     return (

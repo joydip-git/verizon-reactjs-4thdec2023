@@ -1,15 +1,37 @@
-useful links:
-form in React:
-https://www.freecodecamp.org/news/how-to-build-forms-in-react/#:~:text=To%20handle%20form%20submission%2C%20you%20can%20use%20the%20handleSubmit%20function.&text=In%20this%20example%2C%20we%20pass,values%20of%20each%20form%20field.
+type PostDetailPropType={
+	postId:number
+}
+function PostDetail(props:Readonly<PostDetailPropType>){
 
-React JS tutorial:
-https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
+	useEffect(
+		()=>{
+			fetchPost(props.postId)
+			const cleanUp =  ()=>{
+				//clean up resources
+			}
+			return cleanUp
+		},
+		[props.postId]
+	)
 
-React Hooks:
-https://www.youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A
+	useEffect(
+		()=>{
+			//side effect causing code
+			const cleanUp =  ()=>{
+			}
+			return cleanUp
+		},
+		[]
+	)
 
-Redux:
-https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK
+	useEffect(
+		()=>{
+			//side effect causing code,
+			const cleanUp =  ()=>{
+			}
+			return cleanUp
+		}
+	)
+	return design
+}
 
-Udemy React:
-https://www.udemy.com/course/react-the-complete-guide-incl-redux/

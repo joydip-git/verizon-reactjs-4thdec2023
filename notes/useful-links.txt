@@ -1,0 +1,15 @@
+useful links:
+form in React:
+https://www.freecodecamp.org/news/how-to-build-forms-in-react/#:~:text=To%20handle%20form%20submission%2C%20you%20can%20use%20the%20handleSubmit%20function.&text=In%20this%20example%2C%20we%20pass,values%20of%20each%20form%20field.
+
+React JS tutorial:
+https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
+
+React Hooks:
+https://www.youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A
+
+Redux:
+https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK
+
+Udemy React:
+https://www.udemy.com/course/react-the-complete-guide-incl-redux/

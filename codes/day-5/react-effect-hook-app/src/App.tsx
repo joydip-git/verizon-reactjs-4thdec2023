@@ -6,6 +6,7 @@ import Counter from './Counter';
 function App() {
   const [count, setCount] = useState<number>(0)
   const [name, setName] = useState<string>('')
+  const [show, setShow] = useState<boolean>(true)
 
   const countHandler = () => {
     setCount(
@@ -20,10 +21,18 @@ function App() {
   console.log('App rendering...')
   return (
     <div className="App">
+      <button type="button" onClick={
+        () => setShow(cs => !cs)
+      }>
+        {
+          show ? 'Hide' : 'Show'
+        }
+      </button>
+      <br /><br />
       <Name nameValue={name} updateName={nameHandler} />
       <br />
       <br />
-      <Counter countValue={count} increaseCount={countHandler} />
+      {show && <Counter countValue={count} increaseCount={countHandler} />}
     </div>
   );
 }

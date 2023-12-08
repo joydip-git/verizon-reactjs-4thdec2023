@@ -8,7 +8,7 @@ const initialNameState = {
     name: ''
 }
 
-const actionTypes = {
+const actions = {
     INCREASE: 'INCREASE',
     DECREASE: 'DECREASE',
     UPDATE_NAME: 'UPDATE_NAME'
@@ -16,32 +16,32 @@ const actionTypes = {
 
 const increaseActionCreator = (data) => {
     return {
-        type: actionTypes.INCREASE,
+        type: actions.INCREASE,
         payload: data
     }
 }
 const decreaseActionCreator = (data) => {
     return {
-        type: actionTypes.DECREASE,
+        type: actions.DECREASE,
         payload: data
     }
 }
 const updateNameActionCreator = (data) => {
     return {
-        type: actionTypes.UPDATE_NAME,
+        type: actions.UPDATE_NAME,
         payload: data
     }
 }
 
 function countReducer(state = initialCountState, action) {
     switch (action.type) {
-        case actionTypes.INCREASE:
+        case actions.INCREASE:
             return {
                 count: state.count + action.payload
             }
             break;
 
-        case actionTypes.DECREASE:
+        case actions.DECREASE:
             return {
                 count: state.count - action.payload
             }
@@ -56,7 +56,7 @@ function countReducer(state = initialCountState, action) {
 
 function nameReducer(state = initialNameState, action) {
     switch (action.type) {
-        case actionTypes.UPDATE_NAME:
+        case actions.UPDATE_NAME:
             return {
                 name: action.payload
             }
