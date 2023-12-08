@@ -23,5 +23,5 @@ export function updateProduct(id: number, p: Product) {
 
 export function addProduct(p: Product) {
     //send an HTTP request to RESTful API server
-    return axiosInstance.put<ApiResponse<Product[]>>(`products`, p)
+    return axiosInstance.post<ApiResponse<Product[]>>(`products`, p)
 }

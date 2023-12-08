@@ -48,5 +48,15 @@
         "price": 67,
         "starRating": 4,
         "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+    },
+    {
+        "productId": 10,
+        "productName": "dell",
+        "productCode": "dell-123",
+        "price": 1000,
+        "description": "kjcakscnlsancklsn",
+        "starRating": 4,
+        "imageUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.dell.com%2Fis%2Fimage%2FDellContent%2Fcontent%2Fdam%2Fss2%2Fproduct-images%2Fdell-client-products%2Fworkstations%2Fmobile-workstations%2Fprecision%2F16-7670%2Fmedia-gallery%2Fnotebook-precision-7670-gray-gallery-4.psd%3Ffmt%3Dpng-alpha%26pscan%3Dauto%26scl%3D1%26hei%3D402%26wid%3D619%26qlt%3D100%2C1%26resMode%3Dsharp2%26size%3D619%2C402%26chrss%3Dfull&tbnid=0r-Yy4cwqyRnYM&vet=12ahUKEwi5oKHPhf-CAxViUWwGHewFB5oQMygBegQIARBS..i&imgrefurl=https%3A%2F%2Fwww.dell.com%2Fen-in%2Fwork%2Fshop%2Fbusiness-laptop-notebook-computers%2Fprecision-7670-mobile-workstation%2Fspd%2Fprecision-16-7670-laptop%2Fawm7670_vp&docid=66iljvgKM9-E8M&w=619&h=402&q=dell%20product%20images&ved=2ahUKEwi5oKHPhf-CAxViUWwGHewFB5oQMygBegQIARBS",
+        "releaseDate": "2023-12-11"
     }
 ]
