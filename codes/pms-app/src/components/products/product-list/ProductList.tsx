@@ -4,7 +4,7 @@ import { getProducts } from '../../../services/productservice'
 import { useSelector, useDispatch } from "react-redux";
 import { StateMapType } from '../../../redux/store';
 import { fetchFailure, fetchSuccess, initiateFetch } from '../../../redux/reducers';
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 
 type ProductListPropType = {}
 const ProductList = (props: Readonly<ProductListPropType>) => {
@@ -38,7 +38,12 @@ const ProductList = (props: Readonly<ProductListPropType>) => {
 
     useEffect(
         () => {
-            fetchRecords()
+            setTimeout(
+                () => {
+                    fetchRecords()
+                },
+                2000
+            )
         },
         []
     )
@@ -51,30 +56,32 @@ const ProductList = (props: Readonly<ProductListPropType>) => {
         design = <span>no record found</span>
     } else {
         design = (
-            <div className='container container-fluid'>
-                <h2 className='text-muted'>
-                    List of {productlist.length} Products:
-                </h2>
-                <br />
-                <table className='table table-hover'>
-                    <thead>
-                        <tr>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Rating</th>
-                            <th>Delete</th>
-                        </tr>
-                    </thead>
-                    <tbody className='table-primary'>
-                        {
-                            productlist.map(
-                                (p) => <ProductRow key={p.productId} productData={p} />
-                            )
-                        }
-                    </tbody>
-                </table>
-            </div>
+            <Suspense>
+                <div className='container container-fluid'>
+                    <h2 className='text-muted'>
+                        List of {productlist.length} Products:
+                    </h2>
+                    <br />
+                    <table className='table table-hover'>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Rating</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody className='table-primary'>
+                            {
+                                productlist.map(
+                                    (p) => <ProductRow key={p.productId} productData={p} />
+                                )
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </Suspense>
         )
     }
     return design
